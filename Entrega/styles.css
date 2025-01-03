@@ -68,13 +68,20 @@ body {
     animation: fade 2s ease-in-out 6s forwards;
 }
 
+
+
 .skull-dungeon-logo{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50vh;
     opacity: 0;
-    animation: fadein 6s ease-in-out 8s forwards;
+    animation:fadeIn 1s linear 8s forwards ;
+}
+
+.fadeIn{
+    animation: fade 4s ease-in-out 10s forwards;
+    
 }
 
 #header{
@@ -85,7 +92,7 @@ body {
     height:  100px;
     background-color: #ff4f4f;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 2rem;
     box-shadow: 0px 10px 10px rgb(0,0,0,0.3);
@@ -114,7 +121,7 @@ body {
     width: 100px;
     height: 100px;
     transform-style: preserve-3d;
-    animation:  girar 2s ease-in-out 3;
+    animation:  girar 2s ease 3;
 }
 
 
@@ -147,19 +154,16 @@ body {
     
 }
 
-@keyframes fadein {
+@keyframes fadeIn {
     from{
         opacity: 0;
+        filter: blur(20px);
     }
-    20%{
+    10%{
         opacity: 1;
+        filter: brightness(2) blur(10px);
     }
-    90%{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
+    to{opacity: 1;}
     
 }
 
