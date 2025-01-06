@@ -40,14 +40,16 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: georama, sans-serif;
+    font-family: 'georama', sans-serif;
 }
 
 body {
     height: 100vh;
+    width: 100vw;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-primary);
 }
 
 .container-ls{
@@ -132,6 +134,85 @@ ul{
     flex: 1;
 }
 
+/* formulario */
+
+.form{
+    background-color: white;
+    width: 95%;
+    min-width: 420px;
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+p{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: grey;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form{
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0 auto;
+}
+
+.row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 20px 30px;
+    margin-bottom: 20px;
+}
+
+label{
+    color: black;
+    font-size: 14px;
+    font-weight: 500px;
+}
+
+textarea, input{
+    width: 100%;
+    font-weight: 400px;
+    padding: 8px 10px;    
+    border-radius: 5px;
+    border: 1.2px solid gray;
+    margin-top: 5px;
+}
+textarea{
+    resize: none;
+}
+
+textarea:focus,
+input:focus{
+    outline: none;
+    border-color: var(--lt-primary);
+}
+
+button{
+    border:none;
+    padding: 10px 20px;
+    background: linear-gradient(
+        130deg,
+        #170404,
+        #4a0606);
+    color: white;
+    border-radius:3px ;
+}
 /* footer */
 
 footer{
