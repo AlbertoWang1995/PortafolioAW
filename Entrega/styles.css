@@ -105,7 +105,7 @@ header{
 
 main{
     display: flex;
-    margin-top: 100px;
+    margin-top:1000px;
     margin-bottom: 500px;
     padding: 3em 0 3em 0;
     padding-top: 100px;
@@ -155,7 +155,7 @@ ul{
 .main   {
     display: flex;
     flex-direction: column;
-    flex: 1;
+ 
 }
 
 /* contenido 1 */
@@ -260,16 +260,14 @@ button{
 /* footer */
 
 footer{
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
     width: 100%;
     background-color: var(--grey-4);
-    min-height: 100px;
+    min-height: 150px;
     padding: 20px 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .redes{
