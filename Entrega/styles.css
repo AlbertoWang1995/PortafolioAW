@@ -95,6 +95,7 @@ header{
     background-color: #ff4f4f;
     padding: 3em 0 3em 0;
     margin-bottom: 10px;
+    z-index: 1000;
 
 }
 
@@ -172,7 +173,7 @@ ul{
     grid-template-columns: 
         repeat(
             auto-fit,
-            minmax(150px,1fr)    
+            minmax(100px,1fr)    
         );
     gap: 32px;
     margin-top: 32px;
