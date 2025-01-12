@@ -158,9 +158,29 @@ ul{
     flex-direction: column;
  
 }
+/*galeria*/
+
+.container{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,300px));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.container img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+
+}
 
 /* contenido 1 */
-
 .contenido-1 > img {
 
     border-radius: 8px;
@@ -181,7 +201,6 @@ ul{
     margin-bottom: 32px;
     position: relative;
 } 
-
 
     
 
